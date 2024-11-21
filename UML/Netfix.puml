@@ -5,7 +5,7 @@ class Netflix{
 main
 setup()
 -static ArrayList<User> users
--static ArrayList<Media> ...
+-static ArrayList<Media> media
 }
 class User{
 - username
@@ -31,7 +31,7 @@ abstract class Media{
  +equals()
 
 }
-class Film{
+class Movie{
 +Film(titel, releaseDate, Categories, rating)
 }
 class Series {
@@ -60,13 +60,12 @@ class TextUI{
 }
 class FileIO{
 +static ArrayList<String> readFile(String fileName)
-+static void writeFile()
     }
 }
 
 Netflix *-- User
 Netflix *-- Media
-Media <|-- Film
+Media <|-- Movie
 Media <|-- Series
 Series <|-- Season
 Season <|-- Episode
