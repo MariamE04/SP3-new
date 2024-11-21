@@ -59,10 +59,8 @@ class TextUI{
 + boolean promptBinary(String msg )
 }
 class FileIO{
-FileReader()
-+List<Media> readUserData(String path)
-+void saveData(List<User> users,String path)
-+String[] readBoardData(String path, int length)
++static ArrayList<String> readFile(String fileName)
++static void writeFile()
     }
 }
 
